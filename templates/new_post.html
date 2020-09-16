@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+
+
+
+{% endblock %}
+{% block body %} 
+<h2>Create a New Blog Post</h2>
+<form action='/posts' method ='POST'>
+  
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Title</label>
+    <input type="text" class="form-control" id="title" name="title" placeholder="Enter a title">
+  </div>
+ 
+  <br>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Post</label>
+    <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+  </div>
+  
+  <br>
+  
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Author</label>
+    <input type="text" class="form-control" id="author" name="author" placeholder="Enter your name">
+  </div>
+  
+  <input type ="submit" value = "Post">
+  <br>
+
+</form>
+<hr>
+
+{% endblock %}
+
